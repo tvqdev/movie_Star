@@ -6,14 +6,78 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Movie Star</title>
+     <!-- OwlCarouse -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick-theme.css" />
+
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+     <!-- Main -->
      <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+     <!-- Header -->
+     <header>
+          <div class="container">
+               <p class="header__text header__top">
+                    <i class="fas fa-phone-alt st-current"></i>
+                    <span> 096.105.1014 |</span>
+                    <i class="fa fa-search"></i>
+               </p>
+               <nav class="header__nav">
+                    <a href="#">
+                         <img src="./img/logo.svg" alt="a1">
+                    </a>
+                    <div class="header_menu">
+                         <ul>
+                              <li><a class="active" href="#">Home</a></li>
+                              <li><a href="#">what's on</a></li>
+                              <li><a href="#">shortcodes</a></li>
+                              <li><a href="#">new</a></li>
+                              <li><a href="#">contact</a></li>
+                         </ul>
+                    </div>
+               </nav>
+          </div>
+
+     </header>
+     <!-- End Header -->
+
+     <!-- carousel -->
+     <section class="carousel">
+          <div class="container">
+               <div class="carousel__content">
+                    <p>ACTION, ADVENTURE, FANTASY</p>
+                    <h2>End of the World: Part I</h2>
+                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est
+                         notare quam littera gothica, quam nunc putamu.</p>
+               </div>
+          </div>
+     </section>
 
 
-
+     <!-- Main -->
      <script src="./js/main.js"></script>
+     <!-- JQUERY -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!-- OwlCarouse -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
+     <script>
+          // $('.carousel__slick').slick();
+          // $('.carousel__slick').slick({
+          //      infinite: true,
+
+          //      autoplay: true,
+          //      autoplaySpeed: 3000,
+          // });
+          // $('.carousel__slick').slick({
+          //      dots: true,
+          //      infinite: true,
+          //      speed: 300,
+          //      slidesToShow: 1,
+          // });
+     </script>
 </body>
 
 </html>

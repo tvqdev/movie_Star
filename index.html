@@ -5,79 +5,390 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Movie Star</title>
-     <!-- OwlCarouse -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.css" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick-theme.css" />
+     <title>Flix</title>
 
-     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+     <!-- GG font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;900&display=swap"
+          rel="stylesheet">
+
+     <!-- OWL CAROUSEL -->
+     <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+     <!-- Box Icon -->
+     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
      <!-- Main -->
+     <link rel="stylesheet" href="./css/grid.css">
      <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-     <!-- Header -->
-     <header>
+     <!-- header -->
+     <header class="nav-wrapper">
           <div class="container">
-               <p class="header__text header__top">
-                    <i class="fas fa-phone-alt st-current"></i>
-                    <span> 096.105.1014 |</span>
-                    <i class="fa fa-search"></i>
-               </p>
-               <nav class="header__nav">
-                    <a href="#">
-                         <img src="./img/logo.svg" alt="a1">
+               <div class="nav">
+                    <a href="#" class="logo">
+                         <i class='bx bx-movie-play bx-tada main-color'></i>Fl<span class="main-color">i</span>x
                     </a>
-                    <div class="header_menu">
-                         <ul>
-                              <li><a class="active" href="#">Home</a></li>
-                              <li><a href="#">what's on</a></li>
-                              <li><a href="#">shortcodes</a></li>
-                              <li><a href="#">new</a></li>
-                              <li><a href="#">contact</a></li>
-                         </ul>
+                    <ul class="nav-menu" id="nav-menu">
+                         <li><a href="#">Home</a></li>
+                         <li><a href="#">Genre</a></li>
+                         <li><a href="#">Movies</a></li>
+                         <li><a href="#">Series</a></li>
+                         <li><a href="#">About</a></li>
+                         <li>
+                              <a href="#" class="btn btn-hover">
+                                   <span>Sign in</span>
+                              </a>
+                         </li>
+
+                    </ul>
+
+                    <!-- MOBILE MENU TOGGLE -->
+                    <div class="hamburger-menu" id="hamburger-menu">
+                         <div class="hamburger">
+
+                         </div>
                     </div>
-               </nav>
-          </div>
-
-     </header>
-     <!-- End Header -->
-
-     <!-- carousel -->
-     <section class="carousel">
-          <div class="container">
-               <div class="carousel__content">
-                    <p>ACTION, ADVENTURE, FANTASY</p>
-                    <h2>End of the World: Part I</h2>
-                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est
-                         notare quam littera gothica, quam nunc putamu.</p>
                </div>
           </div>
+     </header>
+
+     <!-- End Header -->
+
+     <!-- Hero section -->
+     <section class="hero-section">
+          <!-- HERO SLIDE -->
+          <div class="hero-slide">
+               <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+                    <!-- SLIDE ITEM -->
+                    <div class="hero-slide-item">
+                         <img src="./images/black-banner.png" alt="">
+                         <div class="overlay"></div>
+                         <div class="hero-slide-item-content">
+                              <div class="item-content-wraper">
+                                   <div class="item-content-title top-down">
+                                        Black Panthefar
+                                   </div>
+                                   <div class="movie-infos top-down delay-2">
+                                        <div class="movie-info">
+                                             <i class="bx bxs-star">
+                                             </i>
+                                             <span>9.5</span>
+                                        </div>
+                                        <div class="movie-info">
+                                             <i class="bx bxs-time">
+                                             </i>
+                                             <span>120 mins</span>
+                                        </div>
+                                        <div class="movie-info">
+                                             <span>HD</span>
+                                        </div>
+                                        <div class="movie-info">
+                                             <span>16+</span>
+                                        </div>
+                                   </div>
+                                   <div class="item-content-description top-down delay-4">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officiis dolorem
+                                        quas perspiciatis corrupti quod, enim aut voluptates sunt, commodi blanditiis
+                                        doloribus sed voluptas soluta! Consequuntur, temporibus ex. Rem, repellendus.
+                                   </div>
+                                   <div class="item-action top-down delay-6">
+                                        <a href="#" class="btn btn-hover">
+                                             <i class="bx bxs-right-arrow"></i>
+                                             <span>
+                                                  Watch now
+                                             </span>
+                                        </a>
+                                   </div>
+                              </div>
+                         </div>
+
+                    </div>
+
+                    <div class="hero-slide-item">
+                         <img src="./images/supergirl-banner.jpg" alt="">
+                         <div class="overlay"></div>
+                         <div class="hero-slide-item-content">
+                              <div class="item-content-wraper">
+                                   <div class="item-content-title top-down">
+                                        Supergirl
+                                   </div>
+                                   <div class="movie-infos top-down delay-2">
+                                        <div class="movie-info">
+                                             <i class="bx bxs-star">
+                                             </i>
+                                             <span>9.5</span>
+                                        </div>
+                                        <div class="movie-info">
+                                             <i class="bx bxs-time">
+                                             </i>
+                                             <span>120 mins</span>
+                                        </div>
+                                        <div class="movie-info">
+                                             <span>HD</span>
+                                        </div>
+                                        <div class="movie-info">
+                                             <span>16+</span>
+                                        </div>
+                                   </div>
+                                   <div class="item-content-description top-down delay-4">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officiis dolorem
+                                        quas perspiciatis corrupti quod, enim aut voluptates sunt, commodi blanditiis
+                                        doloribus sed voluptas soluta! Consequuntur, temporibus ex. Rem, repellendus.
+                                   </div>
+                                   <div class="item-action top-down delay-6">
+                                        <a href="#" class="btn btn-hover">
+                                             <i class="bx bxs-right-arrow"></i>
+                                             <span>
+                                                  Watch now
+                                             </span>
+                                        </a>
+                                   </div>
+                              </div>
+                         </div>
+
+                    </div>
+
+                    <div class="hero-slide-item">
+                         <img src="./images/transformer-banner.jpg" alt="">
+                         <div class="overlay"></div>
+                         <div class="hero-slide-item-content">
+                              <div class="item-content-wraper">
+                                   <div class="item-content-title top-down">
+                                        Transformer
+                                   </div>
+                                   <div class="movie-infos top-down delay-2">
+                                        <div class="movie-info">
+                                             <i class="bx bxs-star">
+                                             </i>
+                                             <span>9.5</span>
+                                        </div>
+                                        <div class="movie-info">
+                                             <i class="bx bxs-time">
+                                             </i>
+                                             <span>120 mins</span>
+                                        </div>
+                                        <div class="movie-info">
+                                             <span>HD</span>
+                                        </div>
+                                        <div class="movie-info">
+                                             <span>16+</span>
+                                        </div>
+                                   </div>
+                                   <div class="item-content-description top-down delay-4">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officiis dolorem
+                                        quas perspiciatis corrupti quod, enim aut voluptates sunt, commodi blanditiis
+                                        doloribus sed voluptas soluta! Consequuntur, temporibus ex. Rem, repellendus.
+                                   </div>
+                                   <div class="item-action top-down delay-6">
+                                        <a href="#" class="btn btn-hover">
+                                             <i class="bx bxs-right-arrow"></i>
+                                             <span>
+                                                  Watch now
+                                             </span>
+                                        </a>
+                                   </div>
+                              </div>
+                         </div>
+
+                    </div>
+                    <!-- END SLIDE ITEM -->
+
+               </div>
+          </div>
+          <!-- END HERO SLIDE -->
+
+          <!-- TOP MOVIE SLIDE -->
+          <div class="top-movies-slide">
+               <div class="owl-carousel" id="top-movies-slide">
+
+                    <!-- MOVIE ITEM -->
+                    <div class="movie-item">
+                         <img src="./images/series/supergirl.jpg" alt="">
+                         <div class="movie-item-content">
+                              <div class="movie-item-title">
+                                   Supergirl
+                              </div>
+                              <div class="movie-infos">
+                                   <div class="movie-info">
+                                        <i class="bx bxs-star">
+                                        </i>
+                                        <span>9.5</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <i class="bx bxs-time">
+                                        </i>
+                                        <span>120 mins</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <span>HD</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <span>16+</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <!-- END MOVIE ITEM -->
+                    <!-- MOVIE ITEM -->
+                    <div class="movie-item">
+                         <img src="./images/movies/blood-shot.jpg" alt="">
+                         <div class="movie-item-content">
+                              <div class="movie-item-title">
+                                   Supergirl
+                              </div>
+                              <div class="movie-infos">
+                                   <div class="movie-info">
+                                        <i class="bx bxs-star">
+                                        </i>
+                                        <span>9.5</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <i class="bx bxs-time">
+                                        </i>
+                                        <span>120 mins</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <span>HD</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <span>16+</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <!-- END MOVIE ITEM -->
+                    <!-- MOVIE ITEM -->
+                    <div class="movie-item">
+                         <img src="./images/movies/bat-man.jpg" alt="">
+                         <div class="movie-item-content">
+                              <div class="movie-item-title">
+                                   The Dark Kninghit
+                              </div>
+                              <div class="movie-infos">
+                                   <div class="movie-info">
+                                        <i class="bx bxs-star">
+                                        </i>
+                                        <span>9.5</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <i class="bx bxs-time">
+                                        </i>
+                                        <span>120 mins</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <span>HD</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <span>16+</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- END MOVIE ITEM -->
+                    <!-- MOVIE ITEM -->
+                    <div class="movie-item">
+                         <img src="./images/movies/captain-marvel.png" alt="">
+                         <div class="movie-item-content">
+                              <div class="movie-item-title">
+                                   The Dark Kninghit
+                              </div>
+                              <div class="movie-infos">
+                                   <div class="movie-info">
+                                        <i class="bx bxs-star">
+                                        </i>
+                                        <span>9.5</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <i class="bx bxs-time">
+                                        </i>
+                                        <span>120 mins</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <span>HD</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <span>16+</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- END MOVIE ITEM -->
+                    <!-- MOVIE ITEM -->
+                    <div class="movie-item">
+                         <img src="./images/movies/end-game.jpg" alt="">
+                         <div class="movie-item-content">
+                              <div class="movie-item-title">
+                                   The Dark Kninghit
+                              </div>
+                              <div class="movie-infos">
+                                   <div class="movie-info">
+                                        <i class="bx bxs-star">
+                                        </i>
+                                        <span>9.5</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <i class="bx bxs-time">
+                                        </i>
+                                        <span>120 mins</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <span>HD</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <span>16+</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- END MOVIE ITEM -->
+                    <!-- MOVIE ITEM -->
+                    <div class="movie-item">
+                         <img src="./images/movies/resident-evil.jpg" alt="">
+                         <div class="movie-item-content">
+                              <div class="movie-item-title">
+                                   The Dark Kninghit
+                              </div>
+                              <div class="movie-infos">
+                                   <div class="movie-info">
+                                        <i class="bx bxs-star">
+                                        </i>
+                                        <span>9.5</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <i class="bx bxs-time">
+                                        </i>
+                                        <span>120 mins</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <span>HD</span>
+                                   </div>
+                                   <div class="movie-info">
+                                        <span>16+</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- END MOVIE ITEM -->
+
+               </div>
+          </div>
+          <!-- END TOP MOVIE SLIDE -->
+
+
      </section>
-
-
-     <!-- Main -->
-     <script src="./js/main.js"></script>
      <!-- JQUERY -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-     <!-- OwlCarouse -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
-     <script>
-          // $('.carousel__slick').slick();
-          // $('.carousel__slick').slick({
-          //      infinite: true,
 
-          //      autoplay: true,
-          //      autoplaySpeed: 3000,
-          // });
-          // $('.carousel__slick').slick({
-          //      dots: true,
-          //      infinite: true,
-          //      speed: 300,
-          //      slidesToShow: 1,
-          // });
-     </script>
+     <!-- OWL CAROUSEL -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+     <!-- app JS -->
+     <script src="./js/app.js"></script>
 </body>
 
 </html>
